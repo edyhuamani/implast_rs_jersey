@@ -19,12 +19,16 @@ public class ParteProduccionBUSImpl implements ParteProduccionBUS {
 		try{
 			parteProduccionDAO.getNumeroParte(idNumeroParte);
 		} catch(Exception e){
-		
+			LOG.error(e.getMessage(), e);
 		}
 	}
 
 	public List<String> numerosParte() {
-		
+		try{
+			
+		}catch(Exception e){
+			LOG.error(e.getMessage(), e);
+		}
 		return null;
 	}
 
